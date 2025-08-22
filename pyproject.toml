@@ -1,4 +1,3 @@
-<!---
 ################################################################
 #                                                              #
 #  This file is part of RealityScanMock                        #
@@ -12,11 +11,31 @@
 #  - MIT for contents used as software                         #
 #                                                              #
 ################################################################
--->
+[tool.poetry]
+name = "RealityScanMock"
+version = "1976.06.04.1"
+description = "Mock of REST-API of RealityScan Node (fka Reality Capture rc node)"
+authors = ["basejumpa <alexander.mannwahrenberg@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/basejumpa/RealityScanNodeMock"
+readme = "README.md"
 
-# RealityScanMock
+packages = [
+    { include = "reality_scan_mock", from = "src" },
+]
 
-Mock of REST-API of RealityScan Node (fka Reality Capture rc node)
+include = [
+    "README.md",
+    "LICENSE"
+]
 
-The REST-API is documented at https://rshelp.capturingreality.com/en-US/tools/api.htm
+[tool.poetry.dependencies]
+python = "^3.9"
 
+# ✅ Correct table path:
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"

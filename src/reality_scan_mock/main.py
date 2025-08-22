@@ -1,4 +1,3 @@
-<!---
 ################################################################
 #                                                              #
 #  This file is part of RealityScanMock                        #
@@ -12,11 +11,6 @@
 #  - MIT for contents used as software                         #
 #                                                              #
 ################################################################
--->
 
-# RealityScanMock
-
-Mock of REST-API of RealityScan Node (fka Reality Capture rc node)
-
-The REST-API is documented at https://rshelp.capturingreality.com/en-US/tools/api.htm
+print('RealityScanMock')
 
